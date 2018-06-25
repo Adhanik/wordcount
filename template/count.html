@@ -1,0 +1,13 @@
+
+<h2>"here is the text"</h2>
+<h1>"there are {{count}} words in text."
+    <br/>
+{{fulltext}} <!-- the key value is stored here -->.
+<!--{{worddictionary}}# when returns a dictionary-->
+<h1> word count<h1/>
+    {% for word ,counttotal in sortedwords %}<!--for loop inside html is used in this way as worddictionary.items to traverse a list-->
+
+{{word}} -- {{ counttotal }}
+{% endfor %}
+<br/>
+<a href ="{% url 'home' %}">START AGAIN<a/>

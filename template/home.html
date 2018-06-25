@@ -1,0 +1,41 @@
+<HTML>
+<HEAD>
+    <style>
+    #uu{
+        color:black;
+        background-color: white;
+        margin-left: 30%;
+        font-size: 30px;
+        padding: 20px;
+
+    }
+
+
+    </style>
+</HEAD>
+
+<BODY>
+
+
+
+
+    <br/>
+
+
+<div id = "uu">
+WORD COUNT
+
+</div>
+<br/>
+<a href ="{% url 'about' %}">about<a/>
+<form action="{% url 'count' %}"><!--redirects to url count page which in turn calls view.count-->
+    <textarea cols="40" rows="10" name="fulltext"></textarea>
+<br/>
+<input type="submit" value="Count!!!"/>
+
+
+
+
+</form>
+</BODY>
+</HTML>
